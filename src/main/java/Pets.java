@@ -21,4 +21,9 @@ public class Pets {
 		super();
 	}
 
+	public void put(String petNumber2, Pets pets) {
+		
+		
+	}
+
 }

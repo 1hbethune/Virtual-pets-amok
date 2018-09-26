@@ -1,35 +1,18 @@
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 public class PetShelter {
 
-	public void add(OrganicDog organicDog) {
-		// TODO Auto-generated method stub
+	Map<String, Pets> petss = new HashMap<>();
+
+	public void addPets(Pets pets) {
+		petss.put(pets.getPetNumber(), pets);
 
 	}
 
-	public Pets findPets(String string) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public void add(OrganicCat organicCat) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void add(RoboticDog roboticDog) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public void add(RoboticCat roboticCat) {
-		// TODO Auto-generated method stub
-
-	}
-
-	public Collection<Pets> getAllPets() {
-		// TODO Auto-generated method stub
-		return null;
+	public Collection<Pets> getAllPetss() {
+		return petss.values();
 	}
 
 }
